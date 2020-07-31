@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ЖК «Лунное море» romezzz</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo link" href="/">
+      <img class="logo-img" src="/images/logo.svg" alt="logo">
+      <span class="logo-text text">Лунное море</span>
+    </a>
+    <nav class="menu">
+      <a class="link text" href="#advantages">Преимущества</a>
+      <a class="link text" href="#about">О ЖК</a>
+      <a class="link text" href="#places">Места для отдыха</a>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="banner">
+      <img class="banner-img" src="/images/logo.svg" alt="banner">
+      <h1 class="banner-title">ЖК «Лунное море»</h1>
+      <p class="banner-description">Место, откуда не хочется улетать</p>
+      <a href="#contact-form" class="btn">Забронировать</a>
+    </section>
+
+    <section id="advantages" class="advantages container">
+      <div class="advantages-item">
+        <h2>Уникальный вид</h2>
+        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+      </div>
+
+      <div class="advantages-item">
+        <h2>Инфраструктура</h2>
+        <p>
+          Прекрасные дороги рядом с домом. Много мест для прогулки.
+          Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
+        </p>
+      </div>
+
+      <div class="advantages-item">
+        <h2>Близость к Москве</h2>
+        <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about-wrap">
+      <div class="about container">
+        <div class="about-text">
+          <h2>О ЖК «Лунное море»</h2>
+          <p>
+            Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – 
+            современные скоростные трассы позволяют без труда добираться до столицы и обратно.
+          </p>
+          <p>
+            Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
+          </p>
+        </div>
+        <img class="about-img" src="/images/moon-1.jpg" alt="moon" />
+      </div>
+    </section>
+
+    <section id="places" class="places container">
+      <img class="places-img" src="/images/moon-2.jpg" alt="moon">
+      <div class="places-text">
+        <h2>Места для отдыха</h2>
+        <p>
+          Луна обладает всеми условиями для комфортного отдыха от большого города.
+          В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
+        </p>
+        <p>
+          Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="contact-form-wrap">
+        <h2>Оставьте заявку сегодня!</h2>
+        <form id="contact-form" class="contact-form" action="/contact" method="POST">
+          <fieldset class="contact-form-fieldset">
+            <legend class="contact-form-legend">Параметры квартиры</legend>
+            
+            <div class="form-group">
+              <label class="form-label" for="rooms">Количество комнат:</label>
+              <select class="form-control" id="rooms" name="rooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="decorations">Отделка:</label>
+              <select class="form-control" id="decorations" name="rooms">
+                <option value="with-decoration">Без отделки</option>
+                <option value="without-decoration">С отделкой</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="contact-form-fieldset">
+            <legend class="contact-form-legend">Контактная информация</legend>
+
+            <div class="form-group">
+              <label class="form-label" for="name">Имя:</label>
+              <input class="form-control" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">Телефон:</label>
+              <input class="form-control" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail:</label>
+              <input class="form-control" id="email" name="email">
+            </div>
+          </fieldset>
+          <button class="btn btn-form" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>footer</footer>
+</body>
+</html>
