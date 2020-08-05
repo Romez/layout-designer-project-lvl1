@@ -4,36 +4,16 @@
   --primary-color: #303846;
   --secondary-color: turquoise;
   --light-color: #fff;
-  --dark-color: #f7f7f7;
+  --gray-color: #f7f7f7;
   --header-height: 70px;
-}
-
-.mt-3 {
-  margin-top: 1rem;
 }
 
 .mb-3 {
   margin-bottom: 1rem;
 }
 
-.ml-4 {
-  margin-top: 1.5rem;
-}
-
-.mr-4 {
-  margin-bottom: 1.5rem;
-}
-
 .h1 {
   font-size: 2.5rem;
-}
-
-.h5 {
-  font-size: 1.25rem;
-}
-
-.h6 {
-  font-size: 1rem;
 }
 
 .font-weight-bold {
@@ -56,8 +36,8 @@ body {
   box-sizing: border-box;
   max-width: 1000px;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .row {
@@ -82,12 +62,8 @@ body {
   background-color: var(--primary-color);
 }
 
-.bg-white {
-  background-color: var(--light-color);
-}
-
-.section-bg-dark {
-  background-color: var(--dark-color);
+.bg-gray {
+  background-color: var(--gray-color);
 }
 
 .link {
@@ -100,10 +76,11 @@ body {
 }
 
 .btn {
-  min-width: 120px;
+  min-width: 130px;
   padding: 10px;
 
   font-weight: bold;
+  font-size: 100%;
   text-decoration: none;
 
   border: 1px solid;
@@ -165,30 +142,29 @@ body {
   font-size: 18px;
 }
 
-.section {
-  box-sizing: border-box;
-  padding-top: 65px;
-  padding-bottom: 65px;
-}
-
 .justify-content-between {
   justify-content: space-between;
 }
 
-.justify-content-around {
+.media {
+  display: flex;
   justify-content: space-around;
 }
 
-.justify-content-center {
-  justify-content: center;
-}
-
-.media {
-  display: flex;
-}
-
 .media-body {
-  flex-grow: 1;
+  flex-basis: 500px;
+}
+
+.media-body > * + * {
+  margin-top: 20px;
+}
+
+.media-img-wrap {
+  flex-basis: 330px;
+}
+
+.media-img {
+  width: 100%;
 }
 
 .header {
@@ -202,6 +178,8 @@ body {
   width: 100%;
   height: var(--header-height);
   padding: 0 20px;
+
+  background-color: var(--light-color);
 }
 
 .menu > * + * {
@@ -224,17 +202,19 @@ body {
   margin-right: 10px;
 }
 
-.banner-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0;
-
+.top-section-bg {
   background-image: url("../images/banner.png");
   background-position: 30% 65%;
 }
 
-.banner-img {
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.top-section-logo {
   max-height: 130px;
 }
 
@@ -242,34 +222,7 @@ body {
   max-width: 280px;
 }
 
-.about-block {
-  padding-right: 65px;
-  padding-left: 65px;
-}
-
-.about-text {
-  max-width: 500px;
-}
-
-.about-img {
-  max-height: 200px;
-}
-
-.places-text {
-  max-width: 500px;
-  margin-left: auto;
-}
-
-.places-img {
-  max-height: 200px;
-}
-
-.places-block {
-  padding-right: 65px;
-  padding-left: 65px;
-}
-
-.contact-form-block {
+.contact-form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
