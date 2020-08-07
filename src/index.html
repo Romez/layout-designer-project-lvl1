@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header-fixed">
     <a class="logo link text-primary" href="/">
       <img class="logo-img" src="/images/logo.svg" alt="logo">
       <span>Лунное море</span>
     </a>
 
-    <nav class="menu">
+    <nav class="vertical-menu">
       <a class="link text-primary" href="#advantages">Преимущества</a>
       <a class="link text-primary" href="#about">О ЖК</a>
       <a class="link text-primary" href="#places">Места для отдыха</a>
@@ -23,35 +23,37 @@
 
   <main class="main">
     <section class="top-section-bg">
-      <div class="container top-section">
-        <img class="top-section-logo" src="/images/logo.svg" alt="logo">
+      <div class="container d-flex flex-column align-items-center pt-30 pb-30">
+        <img class="mw-130" src="/images/logo.svg" alt="logo">
 
         <h1 class="h1 text-white">ЖК «Лунное море»</h1>
 
-        <p class="font-weight-bold mb-3 text-white">Место, откуда не хочется улетать</p>
+        <p class="font-weight-bold mb-16 text-white">Место, откуда не хочется улетать</p>
 
         <a href="#contact-form" class="btn btn-default">Забронировать</a>
       </div>
     </section>
 
-    <section id="advantages" class="container">
-      <div class="row justify-content-between">
-        <div class="col advantages-item">
-          <h2 class="title mb-3">Уникальный вид</h2>
-          <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
-        </div>
+    <section id="advantages">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="mw-280">
+            <h2 class="title mb-16">Уникальный вид</h2>
+            <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+          </div>
 
-        <div class="col advantages-item">
-          <h2 class="title mb-3">Инфраструктура</h2>
-          <p>
-            Прекрасные дороги рядом с домом. Много мест для прогулки.
-            Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
-          </p>
-        </div>
+          <div class="mw-280">
+            <h2 class="title mb-16">Инфраструктура</h2>
+            <p>
+              Прекрасные дороги рядом с домом. Много мест для прогулки.
+              Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
+            </p>
+          </div>
 
-        <div class="col advantages-item">
-          <h2 class="title mb-3">Близость к Москве</h2>
-          <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+          <div class="mw-280">
+            <h2 class="title mb-16">Близость к Москве</h2>
+            <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -79,28 +81,30 @@
       </div>
     </section>
 
-    <section id="places" class="container">
-      <div class="media">
-        <div class="media-img-wrap">
-          <img class="media-img" src="/images/moon-2.jpg" alt="moon">
-        </div>
+    <section id="places">
+      <div class="container">
+        <div class="media">
+          <div class="media-img-wrap">
+            <img class="media-img" src="/images/moon-2.jpg" alt="moon">
+          </div>
 
-        <div class="media-body">
-          <h2 class="title">Места для отдыха</h2>
-          <p>
-            Луна обладает всеми условиями для комфортного отдыха от большого города.
-            В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
-          </p>
-          <p>
-            Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
-          </p>
+          <div class="media-body">
+            <h2 class="title">Места для отдыха</h2>
+            <p>
+              Луна обладает всеми условиями для комфортного отдыха от большого города.
+              В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
+            </p>
+            <p>
+              Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="bg-gray">
-      <div class="container contact-form-section">
-        <h2 class="title mb-3">Оставьте заявку сегодня!</h2>
+      <div class="container d-flex flex-column align-items-center">
+        <h2 class="title mb-16px">Оставьте заявку сегодня!</h2>
 
         <form id="contact-form" class="contact-form" action="/contact" method="POST">
           <fieldset class="contact-form-fieldset">
@@ -145,7 +149,7 @@
             </div>
           </fieldset>
 
-          <button class="btn btn-secondary" type="submit">Отправить</button>
+          <button class="btn btn-secondary pl-20 pr-20" type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -154,23 +158,23 @@
   <footer class="bg-dark">
     <div class="container">
       <div class="row justify-content-between">
-        <div class="col">
-          <a class="logo link mb-3" href="/">
+        <div>
+          <a class="logo link mb-16" href="/">
             <img class="logo-img" src="/images/logo.svg" alt="logo">
             <span class="logo-text text-white">Лунное море</span>
           </a>
 
           <div class="copyright text-white">&copy; 2032 год</div>
         </div>
-        <div class="col">
-          <h3 class="title-small mb-3 text-white">Проектная документация</h3>
+        <div>
+          <h3 class="title-small mb-16 text-white">Проектная документация</h3>
           <ul class="list text-white">
             <li><a class="link text-white" href="#">Скачать</a></li>
             <li><a class="link text-white" href="#">Посмотреть на сайте</a></li>
           </ul>
         </div>
-        <div class="col">
-          <h3 class="title-small mb-3 text-white">О застройщике</h3>
+        <div>
+          <h3 class="title-small mb-16 text-white">О застройщике</h3>
           <ul class="list text-white">
             <li><a class="link text-white" href="#">Отзывы</a></li>
             <li><a class="link text-white" href="#">Сайт компании</a></li>
