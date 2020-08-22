@@ -6,7 +6,7 @@ lint:
 	npx htmlhint ./src/*.html
 
 run:
-	http-server ./src
+	npx http-server ./src
 
 deploy:
 	npx surge ./src/
