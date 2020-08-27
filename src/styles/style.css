@@ -121,8 +121,8 @@ main {
   flex-grow: 1;
 }
 
-.flex-basis-280 {
-  flex-basis: 280px;
+.flex-0-1-280 {
+  flex: 0 1 280px;
 }
 
 .flex-basis-500 {
@@ -204,9 +204,8 @@ main {
   justify-content: space-around;
 }
 
-.contact-form {
-  width: 100%;
-  max-width: 460px;
+.w-460 {
+  width: 460px;
 }
 
 .contact-form > * + * {
@@ -287,6 +286,14 @@ main {
 
   .form-control {
     flex-basis: 110px;
+  }
+
+  .w-325-xs {
+    width: 325px;
+  }
+
+  .flex-1-1-280-xs {
+    flex: 1 1 280px;
   }
 
   html {
